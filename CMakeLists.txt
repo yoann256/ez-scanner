@@ -7,6 +7,9 @@ include_directories(${CMAKE_SOURCE_DIR}/libs)
 # Add the executable and link parson.c
 add_executable(EZ_Scanner scanner.cpp)
 
-# If you're using Parson as a static library, you can add this instead:
-add_library(parson STATIC libraries/parson/parson.c)
-target_link_libraries(EZ_Scanner parson)
+# Link with OpenSSL and libcurl
+find_package(OpenSSL REQUIRED)
+find_package(CURL REQUIRED)
+
+target_include_directories(EZ_Scanner PRIVATE ${CURL_INCLUDE_DIRS} ${OPENSSL_INCLUDE_DIR})
+target_link_libraries(EZ_Scanner PRIVATE ${CURL_LIBRARIES} OpenSSL::SSL OpenSSL::Crypto)

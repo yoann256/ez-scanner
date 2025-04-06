@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named parson
-
-# Build rule for target.
-parson: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 parson
-.PHONY : parson
-
-# fast build rule for target.
-parson/fast:
-	$(MAKE) -f CMakeFiles/parson.dir/build.make CMakeFiles/parson.dir/build
-.PHONY : parson/fast
-
-#=============================================================================
 # Target rules for targets named EZ_Scanner
 
 # Build rule for target.
@@ -135,33 +122,6 @@ EZ_Scanner: cmake_check_build_system
 EZ_Scanner/fast:
 	$(MAKE) -f CMakeFiles/EZ_Scanner.dir/build.make CMakeFiles/EZ_Scanner.dir/build
 .PHONY : EZ_Scanner/fast
-
-libraries/parson/parson.o: libraries/parson/parson.c.o
-
-.PHONY : libraries/parson/parson.o
-
-# target to build an object file
-libraries/parson/parson.c.o:
-	$(MAKE) -f CMakeFiles/parson.dir/build.make CMakeFiles/parson.dir/libraries/parson/parson.c.o
-.PHONY : libraries/parson/parson.c.o
-
-libraries/parson/parson.i: libraries/parson/parson.c.i
-
-.PHONY : libraries/parson/parson.i
-
-# target to preprocess a source file
-libraries/parson/parson.c.i:
-	$(MAKE) -f CMakeFiles/parson.dir/build.make CMakeFiles/parson.dir/libraries/parson/parson.c.i
-.PHONY : libraries/parson/parson.c.i
-
-libraries/parson/parson.s: libraries/parson/parson.c.s
-
-.PHONY : libraries/parson/parson.s
-
-# target to generate assembly for a file
-libraries/parson/parson.c.s:
-	$(MAKE) -f CMakeFiles/parson.dir/build.make CMakeFiles/parson.dir/libraries/parson/parson.c.s
-.PHONY : libraries/parson/parson.c.s
 
 scanner.o: scanner.cpp.o
 
@@ -198,11 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... parson"
 	@echo "... EZ_Scanner"
-	@echo "... libraries/parson/parson.o"
-	@echo "... libraries/parson/parson.i"
-	@echo "... libraries/parson/parson.s"
 	@echo "... scanner.o"
 	@echo "... scanner.i"
 	@echo "... scanner.s"

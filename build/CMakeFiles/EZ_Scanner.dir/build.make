@@ -79,7 +79,9 @@ EZ_Scanner_EXTERNAL_OBJECTS =
 
 EZ_Scanner: CMakeFiles/EZ_Scanner.dir/scanner.cpp.o
 EZ_Scanner: CMakeFiles/EZ_Scanner.dir/build.make
-EZ_Scanner: libparson.a
+EZ_Scanner: /usr/lib/x86_64-linux-gnu/libcurl.so
+EZ_Scanner: /usr/lib/x86_64-linux-gnu/libssl.so
+EZ_Scanner: /usr/lib/x86_64-linux-gnu/libcrypto.so
 EZ_Scanner: CMakeFiles/EZ_Scanner.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/ez-scanner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable EZ_Scanner"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EZ_Scanner.dir/link.txt --verbose=$(VERBOSE)

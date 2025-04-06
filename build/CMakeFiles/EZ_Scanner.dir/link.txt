@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/EZ_Scanner.dir/scanner.cpp.o  -o EZ_Scanner  libparson.a 
+/usr/bin/c++     CMakeFiles/EZ_Scanner.dir/scanner.cpp.o  -o EZ_Scanner  /usr/lib/x86_64-linux-gnu/libcurl.so /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 

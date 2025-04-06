@@ -1,4 +1,3 @@
 /workspaces/ez-scanner/build/CMakeFiles/rebuild_cache.dir
 /workspaces/ez-scanner/build/CMakeFiles/edit_cache.dir
-/workspaces/ez-scanner/build/CMakeFiles/parson.dir
 /workspaces/ez-scanner/build/CMakeFiles/EZ_Scanner.dir
