@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/ez-scanner/libraries/parson/parson.c
+parson.h
+/workspaces/ez-scanner/libraries/parson/parson.h
+stdarg.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+math.h
+-
+errno.h
+-
+
+/workspaces/ez-scanner/libraries/parson/parson.h
+stddef.h
+-
+
+/workspaces/ez-scanner/scanner.cpp
+curl/curl.h
+-
+libraries/parson/parson.c
+/workspaces/ez-scanner/libraries/parson/parson.c
+libraries/parson/parson.h
+/workspaces/ez-scanner/libraries/parson/parson.h
+
