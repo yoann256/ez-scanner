@@ -10,7 +10,7 @@
 #include "libraries/parson/parson.c"
 #include "libraries/parson/parson.h"
 
-#define VIRUSTOTAL_API_KEY "28ab61a2b12ffbb0866fc66cf0fdc8a4d63bc60404a9134ff978e9832e96da2d"
+#define VIRUSTOTAL_API_KEY "YOUR_API_KEY"
 
 size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* output) {
     size_t totalSize = size * nmemb;
