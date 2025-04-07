@@ -43,6 +43,8 @@ cstring
 -
 iomanip
 -
+unistd.h
+-
 libraries/parson/parson.c
 /workspaces/ez-scanner/libraries/parson/parson.c
 libraries/parson/parson.h
