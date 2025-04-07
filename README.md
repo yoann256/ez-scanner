@@ -1,6 +1,9 @@
 # EZ Scanner
 <center>Powered by <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/VirusTotal_logo.svg/2560px-VirusTotal_logo.svg.png"></center>
 
+> [!NOTE]
+> This program uses a free VirusTotal API key, you may get errors beacause the API key has been used too much, to prevent that, you can use **your own VirusTotal API key**.
+
 ## Instructions
 ```bash
 ./EZ_Scanner <path_to_file>
