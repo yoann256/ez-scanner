@@ -23,7 +23,7 @@ sudo apt install libssl-dev
 
 > Step 1 - Changing the code
 > You need to change line 13 of scanner.cpp: ```#define VIRUSTOTAL_API_KEY "YOUR_API_KEY"```
-> YOUR_API_KEY needs to be changed to your VirusTotal API key. [Dont kow how to get it?]()
+> YOUR_API_KEY needs to be changed to your VirusTotal API key. [Dont kow how to get it?](https://github.com/yoann256/ez-scanner/blob/main/README.md#how-to-get-your-virustotal-api-key)
 
 > Step 2 - Compiling
 > Just run the following commands:
